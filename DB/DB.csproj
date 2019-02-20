@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20181009091453_1.cs" />
+    <Compile Remove="Migrations\20181009101511_InitialCreate.cs" />
+    <Compile Remove="Migrations\20181016101150_2.cs" />
+    <Compile Remove="Migrations\20181016154755_3.cs" />
+    <Compile Remove="Migrations\20181016161444_4.cs" />
+    <Compile Remove="Migrations\20181023075429_5.cs" />
+    <Compile Remove="Migrations\20181023092232_1.cs" />
+    <Compile Remove="Migrations\20181204080258_8.cs" />
+    <Compile Remove="Migrations\20181204080448_8.cs" />
+    <Compile Remove="Migrations\20181204080802_8.cs" />
+    <Compile Remove="Migrations\20181228155858_9.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
