@@ -18,8 +18,6 @@ using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Swagger;
 
 /// <summary>
-/// Slava ukraini, snizu primer raboti s bazoy
-/// Cmock v pisu
 /// </summary>
 
 namespace ESVS

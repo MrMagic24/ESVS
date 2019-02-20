@@ -12,7 +12,7 @@ namespace ESVS
     public class Program
     {
         public static async Task Main(string[] args)
-        {//Hmmm Danya-сыч!
+        {
             var host = BuildWebHost(args);
             using (var scope = host.Services.CreateScope())
             {
